@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * ppr_hexadecimal - converts unsigned int to hexa
+ * _cnv_hexadecimal - converts unsigned int to hexa
  * @args: va_list arguments
  * @flags: flag
  * Return: number of characters printed
  */
-int ppr_hexadecimal(va_list args, __attribute__ ((unused)) char flags)
+int _cnv_hexadecimal(va_list args, __attribute__ ((unused)) char flags)
 {
 	unsigned int n = va_arg(args, unsigned int);
 	int j, char_count = 0;
