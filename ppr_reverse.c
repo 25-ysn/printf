@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * ppr_reverse - reverses string
- * @args: va_list arguments
- * @flags: flag
- * Return: number of characters printed
+ * _cnv_reverse - reverses string.
+ *
+ * @args: va_list arguments.
+ *
+ * @flags: flag.
+ *
+ * Return: number of characters printed.
  */
-int ppr_reverse(va_list args, __attribute__ ((unused)) char flags)
+
+
+int _cnv_reverse(va_list args, __attribute__ ((unused)) char flags)
+
 {
 	char *str = va_arg(args, char *);
 	int char_count, j = 0;

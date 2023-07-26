@@ -1,12 +1,18 @@
 #include "main.h"
 
+
 /**
- * ppr_signedint - prints a number
- * @args: va_list arguments
- * @flags: flag
- * Return: number of characters printed
+ * _cnv_signedint - prints a number.
+ *
+ * @args: va_list arguments.
+ *
+ * @flags: flag.
+ *
+ * Return: number of characters printed.
  */
-int ppr_signedint(va_list args, __attribute__ ((unused)) char flags)
+
+int _cnv_signedint(va_list args, __attribute__ ((unused)) char flags)
+
 {
 	int n = va_arg(args, int);
 	int j, char_count = 0, negative = 0;

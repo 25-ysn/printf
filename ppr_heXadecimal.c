@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ppr_heXadecimal - converts unsigned int to hexa.
+ * _cnv_heXadecimal - converts unsigned int to hexa.
  *
  * @args: va_list arguments.
  *
@@ -9,7 +9,7 @@
  */
 
 
-int ppr_heXadecimal(va_list args)
+int _cnv_heXadecimal(va_list args)
 
 {
 	unsigned int n = va_arg(args, unsigned int);
