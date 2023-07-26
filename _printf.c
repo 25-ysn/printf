@@ -20,19 +20,19 @@ int convert_specifier(char s, va_list args)
 	int char_count = 0, i, num_specifiers;
 
 	const specifier_mapping specifiers[] = {
-		{'c', ppr_char},
-		{'s', ppr_printstr},
-		{'d', ppr_signedint},
-		{'i', ppr_signedint},
-		{'b', ppr_binary},
-		{'u', ppr_unsignedint},
-		{'o', ppr_octal},
-		{'x', ppr_hexadecimal},
-		{'X', ppr_heXadecimal},
-		{'S', ppr_string},
-		{'p', ppr_pointer},
-		{'r', ppr_reverse},
-		{'R', ppr_rot13ed},
+		{'c', _cnv_char},
+		{'s', _cnv_printstr},
+		{'d', _cnv_signedint},
+		{'i', _cnv_signedint},
+		{'b', _cnv_binary},
+		{'u', _cnv_unsignedint},
+		{'o', _cnv_octal},
+		{'x', _cnv_hexadecimal},
+		{'X', _cnv_heXadecimal},
+		{'S', _cnv_string},
+		{'p', _cnv_pointer},
+		{'r', _cnv_reverse},
+		{'R', _cnv_rot13ed},
 	};
 
 	num_specifiers = sizeof(specifiers) / sizeof(specifiers[0]);
@@ -70,7 +70,7 @@ int check_specifier(char s)
 
 
 /**
- * ppr_printf - produces output according to a format.
+ * _cnv_printf - produces output according to a format.
  *
  * @format: format string.
  *
@@ -78,7 +78,7 @@ int check_specifier(char s)
  */
 
 
-int ppr_printf(const char *format, ...)
+int _cnv_printf(const char *format, ...)
 
 {
 	int i, char_count = 0;

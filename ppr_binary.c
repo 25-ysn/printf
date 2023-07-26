@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ppr_binary - converts an unsigned int binary.
+ * _cnv_binary - converts an unsigned int binary.
  *
  * @args: va_list arguments.
  *
@@ -9,7 +9,7 @@
  */
 
 
-int ppr_binary(va_list args)
+int _cnv_binary(va_list args)
 
 {
 	unsigned int n = va_arg(args, unsigned int);

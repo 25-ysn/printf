@@ -2,7 +2,7 @@
 
 
 /**
- * ppr_octal - converts an unsigned int to octal.
+ * _cnv_octal - converts an unsigned int to octal.
  *
  * @args: va_list arguments.
  *
@@ -10,7 +10,7 @@
  */
 
 
-int ppr_octal(va_list args)
+int _cnv_octal(va_list args)
 
 {
 	unsigned int n = va_arg(args, unsigned int);
