@@ -2,7 +2,7 @@
 
 
 /**
- * ppr_string - converts non printable char.
+ * _cnv_string - converts non printable char.
  *
  * @args: va_list arguments.
  *
@@ -10,7 +10,7 @@
  */
 
 
-int ppr_string(va_list args)
+int _cnv_string(va_list args)
 
 {
 	char *str = va_arg(args, char *);

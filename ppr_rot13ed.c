@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ppr_rot13ed - prints the rot13'ed string.
+ * _cnv_rot13ed - prints the rot13'ed string.
  *
  * @args: va_list arguments.
  *
@@ -9,7 +9,7 @@
  */
 
 
-int ppr_rot13ed(va_list args)
+int _cnv_rot13ed(va_list args)
 
 {
 	char *str = va_arg(args, char *);
