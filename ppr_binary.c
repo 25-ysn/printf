@@ -1,16 +1,23 @@
 #include "main.h"
 
 /**
- * _cnv_binary - converts an unsigned int to binary
- * @args: va_list arguments
+ * ppr_binary - converts an unsigned int binary.
  *
- * Return: numnber of characters printed
+ * @args: va_list arguments.
+ *
+ * Return: numnber of characters printed.
  */
-int _cnv_binary(va_list args)
+
+
+int ppr_binary(va_list args)
+
 {
 	unsigned int n = va_arg(args, unsigned int);
+
 	int char_count = 0;
+
 	unsigned int r = 1, i, j, sum = 0;
+
 	unsigned int a[32];
 
 	r += INT_MAX;
