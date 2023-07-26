@@ -1,17 +1,25 @@
 #include "main.h"
 
 /**
- * _cnv_rot13ed - prints the rot13'ed string
- * @args: va_list arguments
+ * ppr_rot13ed - prints the rot13'ed string.
  *
- * Return: number of characters printed
+ * @args: va_list arguments.
+ *
+ * Return: number of characters printed.
  */
-int _cnv_rot13ed(va_list args)
+
+
+int ppr_rot13ed(va_list args)
+
 {
 	char *str = va_arg(args, char *);
+
 	int i, j, char_count = 0;
+
 	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
 	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	char converted_char;
 
 	for (i = 0; str[i] != '\0'; i++)
