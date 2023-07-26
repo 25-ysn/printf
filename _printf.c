@@ -1,24 +1,16 @@
 #include "main.h"
-#include <stddef.h>
-#include <stdarg.h>
-
 
 /**
- * convert_specifier - substitutes specifier with the corresponding arg.
+ * convert_specifier - substitutes specifier with the corresponding arg
+ * @s: specifier
+ * @args: va_list arguments
  *
- * @s: specifier.
- *
- * @args: va_list arguments.
- *
- * Return: number of characters printed.
+ * Return: number of characters printed
  */
-
-
 int convert_specifier(char s, va_list args)
-
 {
 	int char_count = 0, i, num_specifiers;
-
+	char flags = '\0';
 	const specifier_mapping specifiers[] = {
 		{'c', _cnv_char},
 		{'s', _cnv_printstr},
@@ -40,25 +32,20 @@ int convert_specifier(char s, va_list args)
 	{
 		if (s == specifiers[i].specifier)
 		{
-			char_count += specifiers[i].function(args);
+			char_count += specifiers[i].function(args, flags);
 			break;
 		}
 	}
 	return (char_count);
 }
 
-
 /**
- * check_specifier - checks whether the specifier is valid.
+ * check_specifier - checks whether the specifier is valid
+ * @s: specifier
  *
- * @s: specifier.
- *
- * Return: 1 when valid, 0 otherwise.
+ * Return: 1 when valid, 0 otherwise
  */
-
-
 int check_specifier(char s)
-
 {
 	if (s == 'c' || s == 's' || s == 'd' || s == 'i'
 			|| s == 'b' || s == 'u' || s == 'o' || s == 'x' || s == 'X'
@@ -68,21 +55,15 @@ int check_specifier(char s)
 		return (0);
 }
 
-
 /**
- * _cnv_printf - produces output according to a format.
+ * _printf - produces output according to a format
+ * @format: format string
  *
- * @format: format string.
- *
- * Return: number of characters printed.
+ * Return: number of characters printed
  */
-
-
-int _cnv_printf(const char *format, ...)
-
+int _printf(const char *format, ...)
 {
 	int i, char_count = 0;
-
 	va_list args;
 
 	if (format == NULL || (format[0] == '%'
@@ -114,6 +95,5 @@ int _cnv_printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-
 	return (char_count);
 }

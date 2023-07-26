@@ -1,19 +1,14 @@
 #include "main.h"
 
 /**
- * _printstr - prints a string.
- *
- * @args: va_list arguments.
- *
- * Return: number of characters printed.
+ * _cnv_printstr - prints a string
+ * @args: va_list arguments
+ * @flags: flag
+ * Return: number of characters printed
  */
-
-
-int _printstr(va_list args)
-
+int _cnv_printstr(va_list args, __attribute__ ((unused)) char flags)
 {
 	char *str = va_arg(args, char *);
-
 	int char_count;
 
 	if (str == NULL)
