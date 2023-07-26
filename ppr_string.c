@@ -1,24 +1,16 @@
 #include "main.h"
 
-
 /**
- * ppr_string - converts non printable char.
- *
- * @args: va_list arguments.
- *
- * Return: number of characters printed.
+ * _cnv_string - converts non printable char
+ * @args: va_list arguments
+ * @flags: flag
+ * Return: number of characters printed
  */
-
-
-int ppr_string(va_list args)
-
+int _cnv_string(va_list args, __attribute__ ((unused)) char flags)
 {
 	char *str = va_arg(args, char *);
-
 	int char_count, asciicode, i, x = 0;
-
 	char hex_digits[] = "0123456789ABCDEF";
-
 	char arr[15];
 
 	if (str == NULL)
