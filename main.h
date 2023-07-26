@@ -25,7 +25,7 @@ typedef struct specifier_mapping
 
 int _putchar(char c);
 int ppr_char(va_list args);
-int ppr_printstr(va_list args);
+int _printstr(va_list args);
 int ppr_signedint(va_list args);
 int ppr_binary(va_list args);
 int ppr_unsignedint(va_list args);
