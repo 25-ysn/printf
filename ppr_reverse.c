@@ -1,27 +1,12 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
  * _cnv_reverse - reverses string
  * @args: va_list arguments
  * @flags: flag
  * Return: number of characters printed
  */
 int _cnv_reverse(va_list args, __attribute__ ((unused)) char flags)
-=======
- * _cnv_reverse - reverses string.
- *
- * @args: va_list arguments.
- *
- * @flags: flag.
- *
- * Return: number of characters printed.
- */
-
-
-int _cnv_reverse(va_list args, __attribute__ ((unused)) char flags)
-
->>>>>>> 32f078e35ba5786118ae36a88e86827b2da8a0af
 {
 	char *str = va_arg(args, char *);
 	int char_count, j = 0;

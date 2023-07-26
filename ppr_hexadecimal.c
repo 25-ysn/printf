@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * _cnv_hexadecimal - converts unsigned int to hexa
+ * _cnv_heXadecimal - converts unsigned int to hexa
  * @args: va_list arguments
  * @flags: flag
  * Return: number of characters printed
  */
-int _cnv_hexadecimal(va_list args, __attribute__ ((unused)) char flags)
+int _cnv_heXadecimal(va_list args, __attribute__ ((unused)) char flags)
 {
 	unsigned int n = va_arg(args, unsigned int);
 	int j, char_count = 0;
 	char *hex_digits;
 	char arr[15];
 
-	hex_digits = "0123456789abcdef";
+	hex_digits = "0123456789ABCDEF";
 
 	do {
 		arr[char_count++] = hex_digits[n % 16];
