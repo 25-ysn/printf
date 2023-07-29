@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_char - function that outputs a character
  * @list: argument list containing a character to be printed.
  *
- * Return: 1 (Successful)
+ * Return: 1 (done)
  **/
 int print_char (va_list list)
 {

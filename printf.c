@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-* _printf - print string with processing sepecifiers formats
+* printf function to make the code run
+*
 * @format: the format string to print
 * Return: int(number of characters printed )
 */

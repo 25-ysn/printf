@@ -1,6 +1,6 @@
 #include<unistd.h>
 /**
- * _putchar - function that prints a character
+ * putchar - function run program better 
  * @ch: the character to print
  *
  * Return: int
