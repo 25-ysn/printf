@@ -1,16 +1,23 @@
 #include "main.h"
+
 /**
- * print_octal - function that outputs a number in octal format
- * @list: argument list containing a character to be printed.
+ * print_octal - function that outputs a numbers.
  *
- * Return: 1 (Successful)
- **/
+ * @list: argument list containing a character.
+ *
+ * Return: 1.
+ */
+
 
 int print_octal(va_list list)
+
 {
 	int num = va_arg(list, int);
+
 	unsigned int *buffer_int;
+
 	int index = 0, i = 0;
+
 	int temp_num = num;
 
 	while (temp_num > 0)

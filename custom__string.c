@@ -1,18 +1,22 @@
 #include "main.h"
 
+
 /**
- * print_custom__string - function that outputs a custom string
- *		(0 < ASCII value < 32 or >= 127) are printed this way:
- *		\x, followed by the ASCII code value in hexadecimal
- *		(upper case - always 2 characters)
- * @list: argument list containing a character to be printed.
+ * print_custom__string - function that outputs a custom strings.
+ *
+ * @list: argument list containing.
  *
  * Return: int
- **/
+ */
+
+
 int print_custom__string(va_list list)
+
 {
 	int  i, ret_val, j, len = 0;
+
 	const char *nil_str = "(null)";
+
 	char *str = va_arg(list, char*);
 
 	if (str == NULL)
@@ -46,16 +50,21 @@ int print_custom__string(va_list list)
 	return (len);
 }
 /**
- * print_hexadecimal - function that outputs a number in
- *			hexadecimal format(majuscule)
- * @num: asccii code of the character to be converted
+ * print_hexadecimal - function that outputs a numbers.
  *
- * Return: int
- **/
+ * @num: asccii code of the character to be converted.
+ *
+ * Return: int.
+ */
+
+
 int print_hexadecimal(int num)
+
 {
 	int x, digit_value, digits = 0, printed_chars = 0;
+
 	char hex_digits[] = "0123456789ABCDEF";
+
 	int temp_num = num;
 
 	if (num < 16)

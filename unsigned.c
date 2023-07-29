@@ -1,26 +1,38 @@
 #include "main.h"
 #include <stdlib.h>
 
+
 /**
- * nb_digits - calculate number of digites of number
- * @n: number
- * Return: int
- **/
+ * nb_digits - calculate number of digites of numbers.
+ *
+ * @n: numbers.
+ *
+ * Return: int.
+ */
+
+
 int nb_digits(unsigned int n)
+
 {
 	if (n == 0)
 		return (0);
 	return (1 + nb_digits(n / 10));
 }
 /**
- *  nb_to_str - Convert an unsigned integer to a string representation.
- *  @n: unsigned number
- *  Return: pointer to char
- **/
+ *  nb_to_str - Convert an unsigned integer to a strings representation.
+ *
+ *  @n: unsigned numbers.
+ *
+ *  Return: pointer to chars.
+ */
+
 char *nb_to_str(unsigned int n)
+
 {
 	int size, rem;
+
 	int idx = 0;
+
 	char *ptr;
 
 	size = nb_digits(n);
@@ -40,15 +52,21 @@ char *nb_to_str(unsigned int n)
 }
 
 /**
- * print_unsigned - function that prints only unsigned numbers
+ * print_unsigned - function that prints only unsigned numbers.
+ *
  * @list: argument list containing a character to be printed.
  *
- * Return: 1 (Successful)
- **/
+ * Return: 1.
+ */
+
+
 int print_unsigned(va_list list)
+
 {
 	unsigned int nb = va_arg(list, unsigned int);
+
 	char *ptr_nb;
+
 	int len = 0;
 
 	if (nb <= 9)

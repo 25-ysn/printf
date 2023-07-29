@@ -1,15 +1,22 @@
 #include "main.h"
+
+
 /**
- * print_decimal - function that outputs a number in decimal format
- * @list: argument list containing a character to be printed.
+ * print_decimal - function that outputs a numbers.
  *
- * Return: 1 (Successful)
- **/
+ * @list: argument list containing a characters.
+ *
+ * Return: 1.
+ */
+
 
 int print_decimal(va_list list)
+
 {
 	int num = va_arg(list, int), buffer_int[10];
+
 	int index = 0, i = 0;
+
 	char sign;
 
 	if (num < 0)

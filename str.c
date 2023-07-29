@@ -1,11 +1,17 @@
 #include "main.h"
+
+
 /**
- * print_str - function that outputs a string
- * @list: argument list containing a character to be printed.
+ * print_str - function that outputs a strings.
  *
- * Return: 1 (Successful)
- **/
+ * @list: argument list containing a character.
+ *
+ * Return: 1.
+ */
+
+
 int print_str(va_list list)
+
 {
 int i, len = 0, ret_val, j = 0;
 const char *nil_str = "(null)";

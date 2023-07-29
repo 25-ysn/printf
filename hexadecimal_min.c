@@ -1,17 +1,24 @@
 #include "main.h"
+
+
 /**
- * print_hexadecimal_min - function that outputs a number in
- *			hexadecimal format(minuscule)
- * @list: argument list containing a character to be printed.
+ * print_hexadecimal_min - function that outputs a numbers.
  *
- * Return: 1 (Successful)
- **/
+ * @list: argument list containing a characters.
+ *
+ * Return: 1.
+ */
+
 
 int print_hexadecimal_min(va_list list)
+
 {
 	int num = va_arg(list, int);
+
 	unsigned int *buffer_int;
+
 	int index = 0, i = 0;
+
 	int temp_num = num;
 
 	while (temp_num > 0)

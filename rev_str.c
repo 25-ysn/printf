@@ -1,21 +1,28 @@
 #include "main.h"
+
+
 /**
-*long_str - calculate the length of string
-*@str: string
-*Return: int
+* long_str - calculate the length of string
+* @str: string
+* Return: int
 */
+
 int long_str(const char *str)
+
 {
 if (*str == '\0')
 return (0);
 return (1 + long_str(str + 1));
 }
 /**
-* print_rev_str - print string in reverse order
-* @list: list of arguments
-* Return: int
+ * print_rev_str - print string in reverse order
+ * @list: list of arguments
+ * Return: int
 */
+
+
 int print_rev_str(va_list list)
+
 {
 int len_str = 0;
 int len_printed_char = 0;
